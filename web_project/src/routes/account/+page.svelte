@@ -49,9 +49,6 @@
 		profileForm.requestSubmit();
 		}}
 	/>
-	<a href="https://www.google.com/">
-		<button class="hover:bg-cyan-400 transition-opacity">Post</button>
-	</a>
 		<div>
 			<label for="email">Email</label>
 			<input id="email" type="text" value={session.user.email} disabled />
@@ -87,4 +84,8 @@
 			<button class="button block" disabled={loading}>Sign Out</button>
 		</div>
 	</form>
+
+	<a href="https://www.google.com/">
+		<button class="hover:bg-cyan-400 transition-opacity italic">Post on Schoolify</button>
+	</a>
 </div>
