@@ -1,5 +1,6 @@
 <!-- src/routes/+page.svelte -->
 <script lang="ts">
+		import '../app.css'
 	import { Auth } from '@supabase/auth-ui-svelte'
 	import { ThemeSupa } from '@supabase/auth-ui-shared'
 
@@ -7,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>User Management</title>
+	<title>Welcome to Schoolify</title>
 </svelte:head>
 
 <div class="row flex-center flex">
@@ -19,7 +20,11 @@
 			showLinks={false}
 			appearance={{ theme: ThemeSupa, style: { input: 'color: #fff' } }}
 		/>
+		<a href="https://www.google.com/">
+			<button class="hover:bg-cyan-400 transition-opacity">Post</button>
+		</a>
 	</div>
+	
 </div>
 
 

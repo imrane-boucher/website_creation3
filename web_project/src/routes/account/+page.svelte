@@ -49,6 +49,9 @@
 		profileForm.requestSubmit();
 		}}
 	/>
+	<a href="https://www.google.com/">
+		<button class="hover:bg-cyan-400 transition-opacity">Post</button>
+	</a>
 		<div>
 			<label for="email">Email</label>
 			<input id="email" type="text" value={session.user.email} disabled />
