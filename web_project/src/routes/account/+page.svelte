@@ -85,7 +85,7 @@
 		</div>
 	</form>
 
-	<a href="https://www.google.com/">
+	<a href="/blog">
 		<button class="hover:bg-cyan-400 transition-opacity italic">Post on Schoolify</button>
 	</a>
 </div>
