@@ -20,7 +20,7 @@
 			showLinks={false}
 			appearance={{ theme: ThemeSupa, style: { input: 'color: #fff' } }}
 		/>
-		<a href="https://www.google.com/">
+		<a href="/blog">
 			<button class="hover:bg-cyan-400 transition-opacity">Post</button>
 		</a>
 	</div>
