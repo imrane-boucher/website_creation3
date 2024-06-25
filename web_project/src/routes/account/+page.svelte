@@ -3,6 +3,7 @@
 	import { enhance } from '$app/forms';
 	import type { SubmitFunction } from '@sveltejs/kit';
     import Avatar from './Avatar.svelte';
+	import { goto } from '$app/navigation';
 
 	export let data
 	export let form
@@ -18,11 +19,15 @@
 	let avatarUrl: string = profile?.avatar_url ?? ''
 
 	const handleSubmit: SubmitFunction = () => {
-		loading = true
-		return async () => {
-			loading = false
-		}
-	}
+    loading = true;
+    return async () => {
+      // Simulate a delay for submission (replace with actual submission logic)
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      loading = false;
+      goto('/feed'); // Redirect to /feed
+    };
+  };
 
 	const handleSignOut: SubmitFunction = () => {
 		loading = true
@@ -85,7 +90,7 @@
 		</div>
 	</form>
 
-	<a href="https://www.google.com/">
+	<!-- <a href="https://www.google.com/">
 		<button class="hover:bg-cyan-400 transition-opacity italic">Post on Schoolify</button>
-	</a>
+	</a> -->
 </div>
